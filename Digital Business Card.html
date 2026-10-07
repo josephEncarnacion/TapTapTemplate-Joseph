@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Digital Business Card</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="wrap" id="app"></div>
+    <div class="toast" id="toast"></div>
+    <div class="modal" id="shareM">
+      <div class="sheet">
+        <h3>Share this card</h3>
+        <div class="url" id="shUrl"></div>
+        <div class="grid" id="shOpts"></div>
+        <button class="close" data-close>Close</button>
+      </div>
+    </div>
+    <div class="modal" id="qrM">
+      <div class="sheet">
+        <h3>Scan to open card</h3>
+        <canvas class="qr" id="qrC"></canvas>
+        <div class="row">
+          <button class="sec2" id="qrDl">⬇ Download PNG</button
+          ><button class="sec2" data-close>Done</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+    <script defer src="script.js"></script>
+  </body>
+</html>
